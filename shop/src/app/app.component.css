@@ -1,0 +1,307 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styles for the header component */
+  
+  header {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  
+ /* Styles for product cards */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 200px; /* Set the width */
+   height: 200px; /* Set the height to match the width for a square shape  */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 18px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.product-card button {
+  background-color: #f90;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #e88000;
+}
+
+/* Add CSS rules to make it a single row if <= 3 products */
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute cards evenly in the row */
+}
+
+
+  
+  /* Styles for the cart component */
+  .cart {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Use flexbox to arrange items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+/* Style for each cart item */
+.cart li {
+  flex: 0 0 calc(33.33% - 10px); /* Set the width for each item with spacing between them */
+  margin: 0 5px; /* Add some margin between items */
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.cart li img {
+  max-width: 100px; /* Set a maximum width for the product image */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.cart li p {
+  font-size: 16px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.cart li button {
+  background-color: #f90;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 5px; /* Reduce the margin-top for button spacing */
+}
+
+.cart li button:hover {
+  background-color: #e88000;
+}
+
+/* Styles for individual cart items (based on the previous code) */
+.cart li {
+  font-size: 18px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.cart button {
+  background-color: #f90;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cart button:hover {
+  background-color: #e88000;
+}
+  .checkout {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkout h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+}
+
+.checkout-image {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.checkout-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.checkout-details h3 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.checkout-details p {
+  font-size: 16px;
+  color: #777;
+  margin: 5px 0;
+}
+
+.checkout-details label {
+  font-size: 16px;
+  color: #333;
+}
+
+.checkout-details input[type="number"] {
+  width: 50px;
+}
+
+.checkout-details .cancel-button,
+.checkout-details .checkout-button {
+  background-color: #f90;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.checkout-details .checkout-button {
+  background-color: #e88000;
+}
+
+.checkout-details .cancel-button:hover,
+.checkout-details .checkout-button:hover {
+  background-color: #d17500;
+}
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+    color: #333; /* Match the header text color */
+}
+.orange-background {
+    background-color: #e88000; /* Set the background color to orange */
+    color: #fff; /* Set the text color to white */
+    padding: 10px 20px; /* Add padding for spacing */
+    display: inline-block; /* Make it inline-block to fit the content width */
+    border-radius: 5px; /* Add rounded corners for style */
+    font-size: 36px; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    margin: 20px auto; /* Center the element horizontally */
+    text-align: center; /* Center the text horizontally */
+  }
+  .smaller-orange-background {
+    background-color: #e88000; /* Set the background color to orange */
+    color: #fff; /* Set the text color to white */
+    padding: 5px; /* Adjust the padding for spacing */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add rounded corners for style */
+    font-size: 14px; /* Adjust the font size */
+    width: 40px; /* Set the width of the input field */
+  }
+  .total-text {
+    font-size: 100x; /* Adjust the font size to make it bigger */
+  }
+  .modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top of everything */
+  }
+  
+  .modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  @keyframes glowing {
+    0% {
+      color: red; /* Start with red color */
+    }
+    50% {
+      color: orange; /* Transition to orange at 50% */
+    }
+    100% {
+      color: red; /* Return to red color at 100% */
+    }
+  }
+  
+  .glowing-text {
+    animation: glowing 2s linear infinite; /* Apply the glowing animation */
+  }
